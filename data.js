@@ -28,28 +28,149 @@ window.POCKET_PLACES = [
 ];
 
 /* Bon không đi cùng ngoài đời. Những dòng này là lời Bo gửi vào ký ức. */
-window.POCKET_DATA[0].kicker = 'MANG THEO MỘT KÝ ỨC';
-window.POCKET_DATA[0].description = 'Bon không còn ở bên cạnh để cùng đi. Nhưng trong chiếc vali nhỏ này, Bo vẫn dành cho cậu ấy một chỗ.';
-window.POCKET_DATA[7].note = 'Giữ vỏ sò ở lại bãi biển. Bon trên trang là hình ảnh trong ký ức của Bo, không phải bạn đồng hành ngoài đời.';
-
-const BON_MEMORY_NOTES = [
-  'Chuyến này, mình sẽ ngắm thay cả phần của cậu.',
-  'Mình vẫn để dành cho cậu một chỗ bên cạnh.',
-  'Giá mà cậu được thấy những chiếc bóng dài này.',
-  'Bên cửa sổ vẫn còn một chỗ trống, Bon à.',
-  'Màu hồng này chắc cậu cũng sẽ thích.',
-  'Mình ước có thể gọi cậu lại nhìn khung cảnh này.',
-  'Mình sẽ đi chậm, để nhớ cậu thêm một chút.',
-  'Biển toàn vỏ sò, nhỏ xíu như những ký ức mình cất giữ.',
-  'Chỗ này yên lắm. Mình nghĩ cậu sẽ thích.',
-  'Hôm nay mình ngồi lâu hơn một chút, như ngày xưa có cậu.',
-  'Trên đường về, mình lại nhớ những lần cậu đợi mình.',
-  'Vali đầy những câu chuyện mình muốn kể cho cậu.',
-  'Mình đi thêm một vòng nữa nhé, Bon.',
-  'Tấm ảnh có cậu, mình chưa từng quên cất giữ.',
-  'Mình đã về rồi, Bon. Cảm ơn vì vẫn ở trong từng bước chân.'
+/* Lời kể cho hành trình dự kiến của Bo. */
+const BON_CHAPTERS = [
+  {
+    kicker: 'TỪ SYDNEY',
+    description:
+      'Bon mất lâu rồi. Lúc làm trang này, Bo vẫn vẽ cậu bên cạnh.',
+    bon:
+      'Vẽ thêm cậu vào, mình mới thấy giống hai đứa.'
+  },
+  {
+    kicker: 'MỘT NGÀY Ở PERTH',
+    description:
+      'Ngày đầu ở Perth chưa cần đi nhiều. Bo muốn xuống phố, tìm chỗ ăn rồi thong thả làm quen với thành phố.',
+    bon:
+      'Mình kể cậu nghe từ đầu nhé.'
+  },
+  {
+    kicker: 'RỪNG ĐÁ GIỮA CÁT VÀNG',
+    description:
+      'Pinnacles trông như một nơi trên hành tinh khác. Bo muốn đi giữa những cột đá, nhìn tận mắt thứ trước giờ chỉ thấy qua ảnh.',
+    bon:
+      'Chỗ này lạ thật. Không biết cậu có thích không.'
+  },
+  {
+    kicker: 'DỌC THEO BỜ BIỂN',
+    description:
+      'Từ Cervantes đến Geraldton. Bo muốn chừa thời gian cho những lần thấy biển đẹp rồi quyết định dừng xe.',
+    bon:
+      'Còn xa. Mình kể tiếp nhé.'
+  },
+  {
+    kicker: 'ĐẾN XEM MỘT HỒ NƯỚC HỒNG',
+    description:
+      'Bo muốn biết Hutt Lagoon ngoài đời có màu gì. Nếu đẹp như trong ảnh, chắc câu đầu tiên vẫn chỉ là: nhìn này.',
+    bon:
+      'Nhìn này, Bon.'
+  },
+  {
+    kicker: 'QUA KHUNG ĐÁ',
+    description:
+      'Nature’s Window mở ra một khoảng trời giữa đá đỏ. Bo muốn đứng đó một lúc trước khi lấy điện thoại ra.',
+    bon:
+      'Có cậu trong hình vẫn thích hơn.'
+  },
+  {
+    kicker: 'HƯỚNG VỀ SHARK BAY',
+    description:
+      'Một ngày chủ yếu ngồi xe. Trên đường đến Shark Bay, Bo sẽ dừng nghỉ, ăn gì đó rồi đi tiếp. Không phải ngày nào cũng cần thật đặc biệt.',
+    bon:
+      'Hôm nay chỉ có chuyện đi đường thôi.'
+  },
+  {
+    kicker: 'KHÔNG PHẢI CÁT',
+    description:
+      'Nhìn xa cứ tưởng một bãi cát trắng. Đến gần Shell Beach mới thấy dưới chân là vô số vỏ sò bé xíu.',
+    bon:
+      'Mình sẽ chụp gần cho cậu xem.'
+  },
+  {
+    kicker: 'MỘT BUỔI TRƯỚC BIỂN',
+    description:
+      'Bo chừa một buổi ở Shark Bay để không phải đi đâu nữa. Chỉ tìm chỗ ngồi, nhìn biển và nghỉ.',
+    bon:
+      'Ngồi đây với mình một lát nhé.'
+  },
+  {
+    kicker: 'CHƯA CẦN ĐI NGAY',
+    description:
+      'Thêm một ngày quanh Shark Bay. Có thể quay lại chỗ hôm trước, cũng có thể chẳng làm gì theo kế hoạch.',
+    bon:
+      'Ở trang này, mình cho cậu ở lại lâu hơn một chút.'
+  },
+  {
+    kicker: 'QUAY LẠI GERALDTON',
+    description:
+      'Bắt đầu đi ngược về phía nam. Bo muốn chừa vài điểm dừng cho những chỗ đã nhìn thấy nhưng chưa kịp ghé.',
+    bon:
+      'Mình vẫn còn thích gọi tên cậu.'
+  },
+  {
+    kicker: 'VỀ LẠI PERTH',
+    description:
+      'Sau những ngày trên đường, Bo sẽ trở lại Perth. Trả xe, ăn một bữa đàng hoàng và nghỉ sớm.',
+    bon:
+      'Chuyện bình thường thế này cũng muốn kể cậu nghe.'
+  },
+  {
+    kicker: 'MỘT NGÀY ĐỂ TRỐNG',
+    description:
+      'Bo chưa chọn sẽ đi đâu trong ngày này. Cứ để đến Perth rồi quyết định. Có khi một quán nhỏ là đủ.',
+    bon:
+      'Chưa biết đi đâu mà đã vẽ cậu vào rồi.'
+  },
+  {
+    kicker: 'XẾP LẠI HÀNH LÝ',
+    description:
+      'Trước ngày về, Bo muốn xem lại ảnh và ghi vài điều còn nhớ. Không cần chọn toàn những tấm đẹp nhất.',
+    bon:
+      'Sau này xem lại trang này, mình vẫn muốn thấy cậu.'
+  },
+  {
+    kicker: 'TRỞ VỀ SYDNEY',
+    description:
+      'Mười lăm ngày, rồi trở lại Sydney. Trên bản đồ là những nơi Bo muốn đến. Cạnh Bo là Bon — phần Bo tự thêm vào.',
+    bon:
+      'Mình biết ngoài đời không được. Nên ở đây, có cả cậu.'
+  }
 ];
 
 window.POCKET_DATA.forEach((day, index) => {
-  day.bon = BON_MEMORY_NOTES[index];
+  Object.assign(day, BON_CHAPTERS[index]);
+});
+
+window.POCKET_DATA[7].note =
+  'Giữ vỏ sò ở lại bãi biển. Bon trong minh họa không đi cùng Bo ngoài đời.';
+
+/* Chú thích bản đồ: kể về địa điểm, không ép cảnh nào cũng buồn. */
+const PLACE_CAPTIONS = {
+  sydney:
+    'Bo bắt đầu từ Sydney và sẽ trở lại đây sau mười lăm ngày. Đây vẫn là một chuyến đi đang được lên kế hoạch.',
+
+  perth:
+    'Nơi làm quen với Tây Úc. Một ngày đi bộ, tìm chỗ ăn và chuẩn bị cho chặng đường phía trước.',
+
+  pinnacles:
+    'Những cột đá vôi giữa cát vàng. Bo muốn đến tận nơi để biết đứng giữa cảnh này sẽ thấy thế nào.',
+
+  geraldton:
+    'Điểm nghỉ trên đường ven biển. Không cần đi đâu nhiều; một bữa ăn và một buổi chiều thong thả cũng được.',
+
+  hutt:
+    'Hồ hồng gần Port Gregory. Màu ngoài đời có thể khác ảnh — đó cũng là lý do Bo muốn tự đến xem.',
+
+  kalbarri:
+    'Đá đỏ, hẻm núi và Nature’s Window. Bo muốn dành thời gian nhìn cảnh, không chỉ dừng đủ lâu để chụp ảnh.',
+
+  shell:
+    'Bãi biển trắng từ những vỏ sò nhỏ. Một nơi phải đến gần mới thấy điều làm nó khác những bờ biển khác.',
+
+  denham:
+    'Điểm dừng cho vài ngày quanh Shark Bay. Lịch để thưa một chút, để thích chỗ nào còn có thể ở lại.'
+};
+
+window.POCKET_PLACES.forEach((place) => {
+  place.description = PLACE_CAPTIONS[place.id];
 });
