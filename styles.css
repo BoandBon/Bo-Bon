@@ -28,3 +28,49 @@ html[data-reduced-motion=true]{scroll-behavior:auto}html[data-reduced-motion=tru
 dialog .dialog-header{position:sticky;top:0;background:var(--paper);z-index:5;box-shadow:0 -32px 0 var(--paper);padding-bottom:12px;margin-bottom:11px}
 
 @media(max-height:530px) and (min-width:701px){.world-caption{top:22%;width:53%}.world-caption h2{font-size:44px}.world-description{max-width:420px;line-height:1.55}.chapter-route{left:auto;right:var(--page-gutter);bottom:82px;background:#23463aaa;padding:6px 10px;font-size:.75rem;gap:8px}.chapter-route #route-mode{font-size:.75rem}.route-dash{width:12px}.crew{bottom:29%}}
+.music-button {
+  position: fixed;
+  right: max(18px, env(safe-area-inset-right));
+  bottom: max(18px, calc(env(safe-area-inset-bottom) + 18px));
+  z-index: 20;
+
+  width: 52px;
+  height: 52px;
+  border: 2px solid #243d39;
+  background: #fff9e6;
+  color: #243d39;
+  box-shadow: 4px 4px 0 #243d39;
+
+  display: grid;
+  place-items: center;
+
+  font-family: "Pixel", monospace;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.music-button.is-playing {
+  background: #f27658;
+  animation: music-bounce 1.2s steps(2) infinite;
+}
+
+@keyframes music-bounce {
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@media (max-width: 700px) {
+  .music-button {
+    width: 48px;
+    height: 48px;
+    right: 16px;
+    bottom: max(16px, calc(env(safe-area-inset-bottom) + 16px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .music-button {
+    animation: none !important;
+  }
+}
