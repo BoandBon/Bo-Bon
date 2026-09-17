@@ -399,4 +399,30 @@
   document.fonts?.ready.then(measure);
   const initial=location.hash.match(/^#day-(\d{2})$/);
   if (initial) requestAnimationFrame(()=>goToDay(Number(initial[1]),true));
+  const music = document.getElementById('background-music');
+const musicButton = document.getElementById('music-button');
+
+music.volume = 0.3;
+
+musicButton.addEventListener('click', async () => {
+  if (music.paused) {
+    try {
+      await music.play();
+
+      musicButton.classList.add('is-playing');
+      musicButton.setAttribute('aria-pressed', 'true');
+      musicButton.setAttribute('aria-label', 'Tắt nhạc');
+      musicButton.textContent = '♫';
+    } catch (error) {
+      console.log('Trình duyệt chưa cho phép phát nhạc.');
+    }
+  } else {
+    music.pause();
+
+    musicButton.classList.remove('is-playing');
+    musicButton.setAttribute('aria-pressed', 'false');
+    musicButton.setAttribute('aria-label', 'Bật nhạc');
+    musicButton.textContent = '♪';
+  }
+});
 })();
