@@ -26,3 +26,30 @@ window.POCKET_PLACES = [
  {id:'shell',name:'Shell Beach',lon:113.766,lat:-26.217,day:8,days:'NGÀY 08 · DỰ KIẾN',description:'Bờ biển trắng được tạo thành từ vỏ sò nhỏ.'},
  {id:'denham',name:'Shark Bay',lon:113.535,lat:-25.928,day:9,days:'NGÀY 07–10 · DỰ KIẾN',description:'Ở lại vài ngày giữa những sắc xanh ven bờ.'}
 ];
+
+/* Bon không đi cùng ngoài đời. Những dòng này là lời Bo gửi vào ký ức. */
+window.POCKET_DATA[0].kicker = 'MANG THEO MỘT KÝ ỨC';
+window.POCKET_DATA[0].description = 'Bon không còn ở bên cạnh để cùng đi. Nhưng trong chiếc vali nhỏ này, Bo vẫn dành cho cậu ấy một chỗ.';
+window.POCKET_DATA[7].note = 'Giữ vỏ sò ở lại bãi biển. Bon trên trang là hình ảnh trong ký ức của Bo, không phải bạn đồng hành ngoài đời.';
+
+const BON_MEMORY_NOTES = [
+  'Chuyến này, mình sẽ ngắm thay cả phần của cậu.',
+  'Mình vẫn để dành cho cậu một chỗ bên cạnh.',
+  'Giá mà cậu được thấy những chiếc bóng dài này.',
+  'Bên cửa sổ vẫn còn một chỗ trống, Bon à.',
+  'Màu hồng này chắc cậu cũng sẽ thích.',
+  'Mình ước có thể gọi cậu lại nhìn khung cảnh này.',
+  'Mình sẽ đi chậm, để nhớ cậu thêm một chút.',
+  'Biển toàn vỏ sò, nhỏ xíu như những ký ức mình cất giữ.',
+  'Chỗ này yên lắm. Mình nghĩ cậu sẽ thích.',
+  'Hôm nay mình ngồi lâu hơn một chút, như ngày xưa có cậu.',
+  'Trên đường về, mình lại nhớ những lần cậu đợi mình.',
+  'Vali đầy những câu chuyện mình muốn kể cho cậu.',
+  'Mình đi thêm một vòng nữa nhé, Bon.',
+  'Tấm ảnh có cậu, mình chưa từng quên cất giữ.',
+  'Mình đã về rồi, Bon. Cảm ơn vì vẫn ở trong từng bước chân.'
+];
+
+window.POCKET_DATA.forEach((day, index) => {
+  day.bon = BON_MEMORY_NOTES[index];
+});
