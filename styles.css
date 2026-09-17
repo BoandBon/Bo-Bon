@@ -116,3 +116,42 @@ dialog .dialog-header{position:sticky;top:0;background:var(--paper);z-index:5;bo
     display: none;
   }
 }
+/* Hiện lời gửi Bon trên điện thoại, kể cả trong Instagram */
+@media (max-width: 700px) {
+  #travel-world #bon-note {
+    display: block;
+    top: auto;
+    left: auto;
+    right: 18px;
+    bottom: max(
+      24%,
+      calc(145px + env(safe-area-inset-bottom, 0px))
+    );
+
+    width: 155px;
+    max-width: calc(100% - 36px);
+    padding: 9px 11px;
+    transform: rotate(1deg);
+    z-index: 4;
+  }
+
+  #travel-world #bon-note > span {
+    font-size: 13px;
+  }
+
+  #travel-world #bon-note p {
+    margin-top: 4px;
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+  }
+}
+
+/* Điện thoại nhỏ */
+@media (max-width: 374px) {
+  #travel-world #bon-note {
+    right: 14px;
+    width: 145px;
+    padding: 8px 10px;
+  }
+}
