@@ -426,3 +426,23 @@ musicButton.addEventListener('click', async () => {
   }
 });
 })();
+
+// Bật nhạc ở lần đầu bấm “Bắt đầu hành trình”.
+document.querySelector('.hero-start')?.addEventListener(
+  'click',
+  () => {
+    const music = document.getElementById('background-music');
+    const button = document.getElementById('music-button');
+
+    if (!music) return;
+
+    music.play().then(() => {
+      button?.classList.add('is-playing');
+      button?.setAttribute('aria-pressed', 'true');
+      button?.setAttribute('aria-label', 'Tắt nhạc');
+    }).catch(() => {
+      // Nếu trình duyệt chặn, người xem vẫn có thể bấm nút ♪.
+    });
+  },
+  { once: true }
+);
