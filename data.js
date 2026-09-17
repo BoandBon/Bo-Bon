@@ -33,107 +33,107 @@ const BON_CHAPTERS = [
   {
     kicker: 'TỪ SYDNEY',
     description:
-      'Bon mất lâu rồi. Lúc làm trang này, Bo vẫn vẽ cậu bên cạnh.',
+      'Chuyến đi còn chưa bắt đầu. Bo đã biết mình muốn có ai đi cùng.',
     bon:
-      'Vẽ thêm cậu vào, mình mới thấy giống hai đứa.'
+      'Mình chọn được nơi muốn đi rồi. Chỉ thiếu cậu.'
   },
   {
     kicker: 'MỘT NGÀY Ở PERTH',
     description:
-      'Ngày đầu ở Perth chưa cần đi nhiều. Bo muốn xuống phố, tìm chỗ ăn rồi thong thả làm quen với thành phố.',
+      'Perth là điểm dừng đầu tiên. Bo muốn dành một ngày đi bộ, tìm chỗ ăn và làm quen với thành phố trước khi lên đường.',
     bon:
-      'Mình kể cậu nghe từ đầu nhé.'
+      'Đến nơi, mình sẽ kể cậu nghe.'
   },
   {
-    kicker: 'RỪNG ĐÁ GIỮA CÁT VÀNG',
+    kicker: 'GIỮA RỪNG ĐÁ',
     description:
-      'Pinnacles trông như một nơi trên hành tinh khác. Bo muốn đi giữa những cột đá, nhìn tận mắt thứ trước giờ chỉ thấy qua ảnh.',
+      'Những cột đá vôi đứng giữa cát vàng. Bo muốn đến lúc nắng xuống thấp, khi nhìn về phía nào cũng thấy một cảnh chưa từng gặp.',
     bon:
-      'Chỗ này lạ thật. Không biết cậu có thích không.'
+      'Không biết cậu sẽ thích chỗ này không. Mình muốn được biết.'
   },
   {
-    kicker: 'DỌC THEO BỜ BIỂN',
+    kicker: 'MEN THEO BỜ BIỂN',
     description:
-      'Từ Cervantes đến Geraldton. Bo muốn chừa thời gian cho những lần thấy biển đẹp rồi quyết định dừng xe.',
+      'Từ Cervantes đến Geraldton. Bo chừa thời gian để dừng bên biển, ăn một bữa và không phải nhìn đồng hồ suốt chặng đường.',
     bon:
-      'Còn xa. Mình kể tiếp nhé.'
+      'Chặng này dài. Mình cứ thong thả thôi.'
   },
   {
-    kicker: 'ĐẾN XEM MỘT HỒ NƯỚC HỒNG',
+    kicker: 'HỒ NƯỚC MÀU HỒNG',
     description:
-      'Bo muốn biết Hutt Lagoon ngoài đời có màu gì. Nếu đẹp như trong ảnh, chắc câu đầu tiên vẫn chỉ là: nhìn này.',
+      'Hutt Lagoon là một trong những nơi khiến Bo muốn thực hiện chuyến đi này. Có những cảnh mới nhìn qua ảnh đã muốn gọi ai đó lại xem.',
     bon:
-      'Nhìn này, Bon.'
+      'Chắc đến đó mình vẫn muốn gọi: Bon, nhìn này.'
   },
   {
-    kicker: 'QUA KHUNG ĐÁ',
+    kicker: 'NHÌN QUA KHUNG ĐÁ',
     description:
-      'Nature’s Window mở ra một khoảng trời giữa đá đỏ. Bo muốn đứng đó một lúc trước khi lấy điện thoại ra.',
+      'Đá đỏ, một khung cửa tự nhiên và dòng sông phía dưới. Bo muốn ngắm Nature’s Window một lúc rồi mới chụp ảnh.',
     bon:
-      'Có cậu trong hình vẫn thích hơn.'
+      'Cảnh này mà có thêm cậu ở góc ảnh thì tốt.'
   },
   {
-    kicker: 'HƯỚNG VỀ SHARK BAY',
+    kicker: 'ĐƯỜNG ĐẾN SHARK BAY',
     description:
-      'Một ngày chủ yếu ngồi xe. Trên đường đến Shark Bay, Bo sẽ dừng nghỉ, ăn gì đó rồi đi tiếp. Không phải ngày nào cũng cần thật đặc biệt.',
+      'Một ngày dành phần lớn thời gian cho di chuyển. Bo sẽ chia chặng, nghỉ đủ và để việc ngắm cảnh tùy theo lúc đến nơi.',
     bon:
-      'Hôm nay chỉ có chuyện đi đường thôi.'
+      'Hôm nay chắc chẳng có gì hay để kể. Mình vẫn kể nhé.'
   },
   {
-    kicker: 'KHÔNG PHẢI CÁT',
+    kicker: 'MỘT BỜ BIỂN KHÔNG CÓ CÁT',
     description:
-      'Nhìn xa cứ tưởng một bãi cát trắng. Đến gần Shell Beach mới thấy dưới chân là vô số vỏ sò bé xíu.',
+      'Shell Beach nhìn xa là một dải trắng. Bo muốn đến gần để nhìn từng vỏ sò nhỏ tạo nên cả bờ biển ấy.',
     bon:
-      'Mình sẽ chụp gần cho cậu xem.'
+      'Toàn vỏ sò thôi. Nhỏ xíu. Để mình chụp gần.'
   },
   {
-    kicker: 'MỘT BUỔI TRƯỚC BIỂN',
+    kicker: 'NGỒI TRƯỚC BIỂN',
     description:
-      'Bo chừa một buổi ở Shark Bay để không phải đi đâu nữa. Chỉ tìm chỗ ngồi, nhìn biển và nghỉ.',
+      'Ở Shark Bay, Bo muốn dành hẳn một buổi không đi đâu. Tìm một chỗ ngồi, cất điện thoại và nhìn nước đổi màu theo nắng.',
     bon:
-      'Ngồi đây với mình một lát nhé.'
+      'Nếu có cậu, mình sẽ ngồi lâu hơn.'
   },
   {
-    kicker: 'CHƯA CẦN ĐI NGAY',
+    kicker: 'THÊM MỘT NGÀY',
     description:
-      'Thêm một ngày quanh Shark Bay. Có thể quay lại chỗ hôm trước, cũng có thể chẳng làm gì theo kế hoạch.',
+      'Không thêm điểm mới. Bo muốn có thời gian quay lại nơi mình thích, thay vì chỉ kịp ghé rồi rời đi.',
     bon:
-      'Ở trang này, mình cho cậu ở lại lâu hơn một chút.'
+      'Nghĩ lại, mình chỉ muốn thêm một ngày bình thường có cậu.'
   },
   {
-    kicker: 'QUAY LẠI GERALDTON',
+    kicker: 'BẮT ĐẦU ĐƯỜNG VỀ',
     description:
-      'Bắt đầu đi ngược về phía nam. Bo muốn chừa vài điểm dừng cho những chỗ đã nhìn thấy nhưng chưa kịp ghé.',
+      'Từ Shark Bay quay lại Geraldton. Những đoạn đường ở lượt đi còn lạ, đến lượt về có lẽ đã nhận ra được vài chỗ.',
     bon:
-      'Mình vẫn còn thích gọi tên cậu.'
+      'Mình sắp về rồi, Bon.'
   },
   {
-    kicker: 'VỀ LẠI PERTH',
+    kicker: 'TRỞ LẠI PERTH',
     description:
-      'Sau những ngày trên đường, Bo sẽ trở lại Perth. Trả xe, ăn một bữa đàng hoàng và nghỉ sớm.',
+      'Về thành phố, trả xe và nghỉ. Bo để dành buổi tối xem lại những tấm ảnh, kể cả những tấm chụp vội trên đường.',
     bon:
-      'Chuyện bình thường thế này cũng muốn kể cậu nghe.'
+      'Mình muốn có thêm ảnh của cậu. Không chỉ xem lại ảnh cũ.'
   },
   {
-    kicker: 'MỘT NGÀY ĐỂ TRỐNG',
+    kicker: 'CHƯA CÓ KẾ HOẠCH',
     description:
-      'Bo chưa chọn sẽ đi đâu trong ngày này. Cứ để đến Perth rồi quyết định. Có khi một quán nhỏ là đủ.',
+      'Một ngày còn để trống ở Perth. Bo sẽ chọn một góc chưa ghé, hoặc trở lại chỗ đã ăn ngon hôm trước.',
     bon:
-      'Chưa biết đi đâu mà đã vẽ cậu vào rồi.'
+      'Đi đâu cũng được. Hồi chọn chuyến này, mình đã nghĩ vậy.'
   },
   {
-    kicker: 'XẾP LẠI HÀNH LÝ',
+    kicker: 'TRƯỚC NGÀY VỀ',
     description:
-      'Trước ngày về, Bo muốn xem lại ảnh và ghi vài điều còn nhớ. Không cần chọn toàn những tấm đẹp nhất.',
+      'Xếp hành lý và ghi lại vài chuyện nhỏ trước khi quên. Bo muốn nhớ chuyến đi đã diễn ra thế nào, không chỉ đã ghé những đâu.',
     bon:
-      'Sau này xem lại trang này, mình vẫn muốn thấy cậu.'
+      'Có nhiều điều về cậu mình vẫn nhớ. Mình muốn viết lại.'
   },
   {
-    kicker: 'TRỞ VỀ SYDNEY',
+    kicker: 'VỀ SYDNEY',
     description:
-      'Mười lăm ngày, rồi trở lại Sydney. Trên bản đồ là những nơi Bo muốn đến. Cạnh Bo là Bon — phần Bo tự thêm vào.',
+      'Mười lăm ngày rồi sẽ hết. Bo sẽ trở về Sydney, có thêm những nơi để kể. Còn tên chuyến đi vẫn là Bo & Bon.',
     bon:
-      'Mình biết ngoài đời không được. Nên ở đây, có cả cậu.'
+      'Tên cậu cứ để cạnh tên mình nhé.'
   }
 ];
 
