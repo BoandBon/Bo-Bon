@@ -2,95 +2,720 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
   <meta name="theme-color" content="#88d3f2">
-  <meta name="description" content="Hành trình 15 ngày từ Sydney của Bo, mang theo ký ức về Bon — người bạn nhỏ đã rời xa nhưng chưa bao giờ thật sự biến mất.">
+  <meta
+    name="description"
+    content="15 ngày khám phá Tây Úc từ Sydney của Bo. Bon không đi cùng ngoài đời, nhưng trong thế giới nhỏ này vẫn có cả hai."
+  >
+
   <title>Pocket Australia — Bo & Bon</title>
-  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
-  <link rel="preload" href="./assets/hero-sydney.webp" media="(min-width: 701px)" as="image" fetchpriority="high">
+
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="./assets/favicon.svg"
+  >
+  <link
+    rel="preload"
+    href="./assets/hero-sydney.webp"
+    media="(min-width: 701px)"
+    as="image"
+    fetchpriority="high"
+  >
   <link rel="stylesheet" href="./styles.css">
+
   <script src="./data.js" defer></script>
   <script src="./assets/australia.js" defer></script>
   <script src="./app.js" defer></script>
 </head>
+
 <body>
   <audio id="background-music" loop preload="none">
-  <source src="./assets/music.mp3" type="audio/mpeg">
-</audio>
+    <source src="./assets/music.mp3" type="audio/mpeg">
+  </audio>
 
-<button id="music-button" class="music-button" type="button"
-        aria-label="Bật nhạc" aria-pressed="false">
-  ♪
-</button>
+  <button
+    id="music-button"
+    class="music-button"
+    type="button"
+    aria-label="Bật nhạc"
+    aria-pressed="false"
+  >
+    ♪
+  </button>
+
   <a class="skip-link" href="#journey">Đến hành trình</a>
+
   <header class="site-header" id="site-header">
-    <a href="#home" class="brand" aria-label="Pocket Australia, về đầu trang"><span class="brand-mark" aria-hidden="true">B<span>·</span>B</span><span>BO <b>&</b> BON<small>POCKET AUSTRALIA</small></span></a>
+    <a
+      href="#home"
+      class="brand"
+      aria-label="Pocket Australia, về đầu trang"
+    >
+      <span class="brand-mark" aria-hidden="true">
+        B<span>·</span>B
+      </span>
+
+      <span>
+        BO <b>&amp;</b> BON
+        <small>POCKET AUSTRALIA</small>
+      </span>
+    </a>
+
     <nav class="header-nav" aria-label="Điều hướng chính">
-      <button class="nav-link" type="button" data-open-plan><span class="nav-number">15</span> <span>ngày đi & nhớ</span></button>
-      <button class="nav-link map-link" type="button" data-open-map><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z M9 3v15 M15 6v15"/></svg><span>Bản đồ</span></button>
+      <button class="nav-link" type="button" data-open-plan>
+        <span class="nav-number">15</span>
+        <span>ngày trên đường</span>
+      </button>
+
+      <button
+        class="nav-link map-link"
+        type="button"
+        data-open-map
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z M9 3v15 M15 6v15"
+          />
+        </svg>
+        <span>Bản đồ</span>
+      </button>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <picture class="hero-picture"><source media="(max-width: 700px)" srcset="./assets/hero-sydney-mobile.webp"><img class="hero-art" src="./assets/hero-sydney.webp" alt="Bo bên hình bóng thân thương của chú bull Pháp Bon và chiếc vali chứa những cảnh quan pixel, phía sau là cảng Sydney." width="1659" height="948" fetchpriority="high" decoding="async"></picture>
+    <section
+      class="hero"
+      id="home"
+      aria-labelledby="hero-title"
+    >
+      <picture class="hero-picture">
+        <source
+          media="(max-width: 700px)"
+          srcset="./assets/hero-sydney-mobile.webp"
+        >
+        <img
+          class="hero-art"
+          src="./assets/hero-sydney.webp"
+          alt="Minh họa pixel Bo và chú bull Pháp Bon bên chiếc vali, phía sau là cảng Sydney."
+          width="1659"
+          height="948"
+          fetchpriority="high"
+          decoding="async"
+        >
+      </picture>
+
       <div class="hero-shade"></div>
+
       <div class="hero-copy">
-        <p class="eyebrow hero-eyebrow"><span class="tiny-star" aria-hidden="true">✦</span> CHUYẾN ĐI BO TỪNG MƠ SẼ CÓ BON</p>
-        <h1 id="hero-title"><span>POCKET</span><span>AUSTRALIA<span class="title-spark" aria-hidden="true">✦</span></span></h1>
-        <div class="journey-ticket"><span>15 NGÀY</span><i aria-hidden="true"></i><span>TỪ SYDNEY</span><i aria-hidden="true"></i><span>MANG THEO MỘT KÝ ỨC</span></div>
+        <p class="eyebrow hero-eyebrow">
+          <span class="tiny-star" aria-hidden="true">✦</span>
+          NGOÀI ĐỜI LÀ BO. Ở ĐÂY CÓ CẢ BON.
+        </p>
+
+        <h1 id="hero-title">
+          <span>POCKET</span>
+          <span>
+            AUSTRALIA<span
+              class="title-spark"
+              aria-hidden="true"
+            >✦</span>
+          </span>
+        </h1>
+
+        <div class="journey-ticket">
+          <span>15 NGÀY</span>
+          <i aria-hidden="true"></i>
+          <span>TỪ SYDNEY</span>
+          <i aria-hidden="true"></i>
+          <span>GỬI BON</span>
+        </div>
       </div>
+
       <div class="hero-actions">
-        <a class="pixel-button primary hero-start" href="#day-01"><span>Bắt đầu hành trình</span><span class="button-arrow" aria-hidden="true">→</span></a>
-        <button class="text-link" type="button" data-open-plan>Xem kế hoạch 15 ngày <span aria-hidden="true">↗</span></button>
+        <a
+          class="pixel-button primary hero-start"
+          href="#day-01"
+        >
+          <span>Bắt đầu hành trình</span>
+          <span class="button-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <button
+          class="text-link"
+          type="button"
+          data-open-plan
+        >
+          Xem kế hoạch 15 ngày
+          <span aria-hidden="true">↗</span>
+        </button>
       </div>
-      <div class="hero-foot"><span class="departure-tag"><span aria-hidden="true">✦</span> SYDNEY · NƠI BO BẮT ĐẦU</span><span class="scroll-hint">Cuộn để nhớ và đi <span aria-hidden="true">↓</span></span></div>
+
+      <div class="hero-foot">
+        <span class="departure-tag">
+          <span aria-hidden="true">✦</span>
+          SYDNEY · NƠI BO BẮT ĐẦU
+        </span>
+
+        <span class="scroll-hint">
+          Cuộn để bắt đầu
+          <span aria-hidden="true">↓</span>
+        </span>
+      </div>
     </section>
 
-    <section class="journey" id="journey" aria-label="Hành trình dự kiến 15 ngày">
-      <div class="travel-world" id="travel-world" data-theme="sky" data-scene="route">
-        <div class="world-layers" aria-hidden="true"><div class="world-layer is-visible" id="world-a"></div><div class="world-layer" id="world-b"></div></div>
+    <section
+      class="journey"
+      id="journey"
+      aria-label="Hành trình dự kiến 15 ngày"
+    >
+      <div
+        class="travel-world"
+        id="travel-world"
+        data-theme="sky"
+        data-scene="route"
+      >
+        <div class="world-layers" aria-hidden="true">
+          <div
+            class="world-layer is-visible"
+            id="world-a"
+          ></div>
+          <div class="world-layer" id="world-b"></div>
+        </div>
+
         <div class="world-tint" aria-hidden="true"></div>
         <div class="world-vignette" aria-hidden="true"></div>
-        <div class="route-stage" id="route-stage" aria-hidden="true"></div>
-        <div class="world-topbar"><a class="mini-brand" href="#home">POCKET AUSTRALIA<span>BO & BON</span></a><button type="button" class="day-badge" data-open-plan aria-label="Mở lịch trình"><span>NGÀY</span> <strong id="world-day">01</strong><span>/ 15</span></button></div>
+        <div
+          class="route-stage"
+          id="route-stage"
+          aria-hidden="true"
+        ></div>
+
+        <div class="world-topbar">
+          <a class="mini-brand" href="#home">
+            POCKET AUSTRALIA
+            <span>BO &amp; BON</span>
+          </a>
+
+          <button
+            type="button"
+            class="day-badge"
+            data-open-plan
+            aria-label="Mở lịch trình"
+          >
+            <span>NGÀY</span>
+            <strong id="world-day">01</strong>
+            <span>/ 15</span>
+          </button>
+        </div>
+
         <div class="world-caption" id="world-caption">
-          <p class="eyebrow" id="world-kicker">MANG THEO MỘT KÝ ỨC</p>
-          <h2 id="world-title">SYDNEY<br>ĐẾN PERTH</h2>
-          <p class="world-description" id="world-description">Bon không còn ở bên cạnh để cùng đi. Nhưng trong chiếc vali nhỏ này, Bo vẫn dành cho cậu ấy một chỗ.</p>
-          <p class="proposed-label"><span aria-hidden="true">◇</span> Hành trình dự kiến</p>
+          <p class="eyebrow" id="world-kicker">
+            TỪ SYDNEY
+          </p>
+
+          <h2 id="world-title">
+            SYDNEY<br>ĐẾN PERTH
+          </h2>
+
+          <p
+            class="world-description"
+            id="world-description"
+          >
+            Bon mất lâu rồi. Lúc làm trang này,
+            Bo vẫn vẽ cậu bên cạnh.
+          </p>
+
+          <p class="proposed-label">
+            <span aria-hidden="true">◇</span>
+            Hành trình dự kiến
+          </p>
         </div>
-        <div class="crew" id="crew" aria-hidden="true"><div class="sprite bo-sprite"></div><div class="sprite bon-sprite"></div><div class="crew-shadow"></div></div>
-        <div class="bon-note" id="bon-note" aria-hidden="true"><span>GỬI BON</span><p>Chuyến này, mình sẽ ngắm thay cả phần của cậu.</p></div>
-        <div class="chapter-route"><span id="route-from">SYDNEY</span><span class="route-dash" aria-hidden="true"></span><span id="route-mode">BAY NỘI ĐỊA</span><span class="route-dash" aria-hidden="true"></span><span id="route-to">PERTH</span></div>
+
+        <div class="crew" id="crew" aria-hidden="true">
+          <div class="sprite bo-sprite"></div>
+          <div class="sprite bon-sprite"></div>
+          <div class="crew-shadow"></div>
+        </div>
+
+        <div
+          class="bon-note"
+          id="bon-note"
+          aria-hidden="true"
+        >
+          <span>GỬI BON</span>
+          <p>Vẽ thêm cậu vào, mình mới thấy giống hai đứa.</p>
+        </div>
+
+        <div class="chapter-route">
+          <span id="route-from">SYDNEY</span>
+          <span class="route-dash" aria-hidden="true"></span>
+          <span id="route-mode">BAY NỘI ĐỊA</span>
+          <span class="route-dash" aria-hidden="true"></span>
+          <span id="route-to">PERTH</span>
+        </div>
+
         <div class="world-navigation">
-          <button class="travel-back" id="previous-day" type="button" aria-label="Ngày trước"><span aria-hidden="true">←</span></button>
-          <button class="travel-details" type="button" id="day-details"><span id="detail-button-label">Chi tiết</span><span aria-hidden="true">↗</span></button>
-          <button class="travel-map" type="button" data-open-map aria-label="Xem bản đồ hành trình"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z M9 3v15 M15 6v15"/></svg></button>
-          <button class="travel-next" id="next-day" type="button"><span>Đi tiếp</span><span aria-hidden="true">→</span></button>
+          <button
+            class="travel-back"
+            id="previous-day"
+            type="button"
+            aria-label="Ngày trước"
+          >
+            <span aria-hidden="true">←</span>
+          </button>
+
+          <button
+            class="travel-details"
+            type="button"
+            id="day-details"
+          >
+            <span id="detail-button-label">Chi tiết</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+
+          <button
+            class="travel-map"
+            type="button"
+            data-open-map
+            aria-label="Xem bản đồ hành trình"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z M9 3v15 M15 6v15"
+              />
+            </svg>
+          </button>
+
+          <button
+            class="travel-next"
+            id="next-day"
+            type="button"
+          >
+            <span>Đi tiếp</span>
+            <span aria-hidden="true">→</span>
+          </button>
         </div>
-        <div class="world-progress" aria-hidden="true"><span id="world-progress-fill"></span></div>
+
+        <div class="world-progress" aria-hidden="true">
+          <span id="world-progress-fill"></span>
+        </div>
       </div>
+
       <div class="chapter-track" id="chapter-track"></div>
     </section>
 
-    <section class="ending" id="ending" aria-labelledby="ending-title">
-      <div class="ending-art" aria-hidden="true"></div><div class="ending-tint" aria-hidden="true"></div>
-      <div class="ending-copy"><p class="eyebrow">15 NGÀY ĐI QUA · MỘT NGƯỜI BẠN Ở LẠI TRONG TIM</p><h2 id="ending-title">Đi xa đến đâu,<br><em>cậu vẫn ở đây.</em></h2><p>Bon không thể bước cùng Bo trên những con đường này.<br>Nhưng trong mỗi cảnh đẹp, Bo vẫn dành cho Bon một chỗ.</p></div>
-      <div class="postcards" aria-label="Những điểm nổi bật của chuyến đi"><button class="postcard postcard-gold" type="button" data-goto="3"><span class="postcard-art" aria-hidden="true"></span><span>PINNACLES<small>Rừng cột đá</small></span></button><button class="postcard postcard-pink" type="button" data-goto="5"><span class="postcard-art" aria-hidden="true"></span><span>HUTT LAGOON<small>Một màu hồng có thật</small></span></button><button class="postcard postcard-shell" type="button" data-goto="8"><span class="postcard-art" aria-hidden="true"></span><span>SHELL BEACH<small>Bờ biển bằng vỏ sò</small></span></button></div>
-      <div class="ending-actions"><button type="button" class="pixel-button primary" data-open-plan>Giở lại kế hoạch <span aria-hidden="true">↗</span></button><a href="#home" class="text-link">Quay về chiếc vali <span aria-hidden="true">↑</span></a></div>
-      <footer class="site-footer"><span>POCKET AUSTRALIA <b>·</b> BO & BON</span><button type="button" id="motion-toggle" aria-pressed="false">Giảm chuyển động</button><button type="button" data-open-about>Về hành trình</button></footer>
+    <section
+      class="ending"
+      id="ending"
+      aria-labelledby="ending-title"
+    >
+      <div class="ending-art" aria-hidden="true"></div>
+      <div class="ending-tint" aria-hidden="true"></div>
+
+      <div class="ending-copy">
+        <p class="eyebrow">BO &amp; BON</p>
+
+        <h2 id="ending-title">
+          Ở đây,<br>
+          <em>có cả Bon.</em>
+        </h2>
+
+        <p>
+          Bon mất lâu rồi.<br>
+          Bo làm trang này và vẽ cậu bên cạnh.<br>
+          Chỉ muốn nhìn thấy hai đứa thêm một lần.
+        </p>
+      </div>
+
+      <div
+        class="postcards"
+        aria-label="Những điểm nổi bật của chuyến đi"
+      >
+        <button
+          class="postcard postcard-gold"
+          type="button"
+          data-goto="3"
+        >
+          <span class="postcard-art" aria-hidden="true"></span>
+          <span>
+            PINNACLES
+            <small>Rừng cột đá</small>
+          </span>
+        </button>
+
+        <button
+          class="postcard postcard-pink"
+          type="button"
+          data-goto="5"
+        >
+          <span class="postcard-art" aria-hidden="true"></span>
+          <span>
+            HUTT LAGOON
+            <small>Một màu hồng có thật</small>
+          </span>
+        </button>
+
+        <button
+          class="postcard postcard-shell"
+          type="button"
+          data-goto="8"
+        >
+          <span class="postcard-art" aria-hidden="true"></span>
+          <span>
+            SHELL BEACH
+            <small>Bờ biển bằng vỏ sò</small>
+          </span>
+        </button>
+      </div>
+
+      <div class="ending-actions">
+        <button
+          type="button"
+          class="pixel-button primary"
+          data-open-plan
+        >
+          Xem lại hành trình
+          <span aria-hidden="true">↗</span>
+        </button>
+
+        <a href="#home" class="text-link">
+          Về đầu trang
+          <span aria-hidden="true">↑</span>
+        </a>
+      </div>
+
+      <footer class="site-footer">
+        <span>
+          POCKET AUSTRALIA <b>·</b> BO &amp; BON
+        </span>
+
+        <button
+          type="button"
+          id="motion-toggle"
+          aria-pressed="false"
+        >
+          Giảm chuyển động
+        </button>
+
+        <button type="button" data-open-about>
+          Về Bo &amp; Bon
+        </button>
+      </footer>
     </section>
   </main>
 
-  <dialog class="plan-dialog" id="plan-dialog" aria-labelledby="plan-title"><div class="dialog-shell"><header class="dialog-header"><div><p class="eyebrow">MỞ CHIẾC VALI</p><h2 id="plan-title">15 ngày để đi và nhớ.</h2></div><button type="button" class="close-button" data-close aria-label="Đóng lịch trình">×</button></header><p class="dialog-intro">Từ Sydney sang Tây Úc, men theo bờ biển rồi trở về. Một hành trình của Bo, cùng những ký ức chưa từng rời đi.</p><div class="plan-summary"><span>15 ngày</span><span>Sydney → Tây Úc</span><span>Kế hoạch dự kiến</span></div><ol class="plan-list" id="plan-list"></ol><p class="planning-note">Tuyến nháp giả định bay Sydney–Perth và thuê xe ở Tây Úc. Ngày đi, chuyến bay, nơi nghỉ và chi phí sẽ được chốt sau. Bon không đi cùng Bo ngoài đời; hình bóng Bon trên website là cách Bo giữ người bạn nhỏ ấy trong hành trình.</p></div></dialog>
+  <dialog
+    class="plan-dialog"
+    id="plan-dialog"
+    aria-labelledby="plan-title"
+  >
+    <div class="dialog-shell">
+      <header class="dialog-header">
+        <div>
+          <p class="eyebrow">LỊCH TRÌNH DỰ KIẾN</p>
+          <h2 id="plan-title">Những nơi Bo muốn đến.</h2>
+        </div>
 
-  <dialog class="map-dialog" id="map-dialog" aria-labelledby="map-title"><div class="dialog-shell map-shell"><header class="dialog-header"><div><p class="eyebrow">MỘT NƯỚC ÚC THẬT LỚN</p><h2 id="map-title">Bo sẽ đi đâu?</h2></div><button type="button" class="close-button" data-close aria-label="Đóng bản đồ">×</button></header><div class="map-toolbar"><div class="map-tabs" role="group" aria-label="Phạm vi bản đồ"><button type="button" class="is-active" data-map-view="australia" aria-pressed="true">Toàn nước Úc</button><button type="button" data-map-view="west" aria-pressed="false">Tây Úc</button></div><span class="map-key"><i></i> Tuyến dự kiến</span></div><div class="map-canvas" id="map-canvas"></div><div class="map-place" id="map-place"><div><p class="eyebrow" id="map-place-day">ĐIỂM KHỞI HÀNH</p><h3 id="map-place-title">Sydney</h3><p id="map-place-description">Nơi Bo bắt đầu, mang theo một ký ức rất thân thương.</p></div><button type="button" class="pixel-button primary" id="map-go" data-goto="1">Đến đây <span aria-hidden="true">→</span></button></div><p class="map-footnote">Bản đồ minh họa tuyến đi, không dùng để dẫn đường. Chặng bay được thể hiện bằng đường nét đứt.</p></div></dialog>
+        <button
+          type="button"
+          class="close-button"
+          data-close
+          aria-label="Đóng lịch trình"
+        >
+          ×
+        </button>
+      </header>
 
-  <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-shell"><header class="dialog-header"><div><p class="eyebrow" id="detail-day">NGÀY 01</p><h2 id="detail-title">Sydney → Perth</h2></div><button type="button" class="close-button" data-close aria-label="Đóng thông tin ngày">×</button></header><p class="detail-lead" id="detail-lead"></p><dl class="detail-facts" id="detail-facts"></dl><div class="detail-highlight"><span class="eyebrow">ĐIỀU MÌNH MONG ĐỢI</span><p id="detail-highlight"></p></div><p class="detail-note" id="detail-note"></p><div class="detail-actions"><button type="button" class="pixel-button primary" id="detail-next">Sang ngày tiếp <span aria-hidden="true">→</span></button><button type="button" class="text-link" id="detail-show-plan">Xem cả hành trình</button></div></div></dialog>
+      <p class="dialog-intro">
+        Từ Sydney sang Tây Úc, men theo bờ biển rồi trở về.
+        Có ngày đi xa, có ngày để trống.
+        Bo muốn có thời gian thật sự ở mỗi nơi.
+      </p>
 
-  <dialog class="about-dialog" id="about-dialog" aria-labelledby="about-title"><div class="dialog-shell"><header class="dialog-header"><div><p class="eyebrow">BO & BON</p><h2 id="about-title">Một chuyến đi dành cho ký ức.</h2></div><button type="button" class="close-button" data-close aria-label="Đóng giới thiệu">×</button></header><p>Đây là hành trình dự kiến của Bo, xuất phát từ Sydney. Bon — chú bull Pháp trắng với vài đốm đen — đã rời xa từ lâu và không thể cùng Bo thực hiện chuyến đi này.</p><p>Bon xuất hiện trong thế giới pixel như một ký ức: vẫn chạy bên cạnh, vẫn nhìn những nơi Bo từng ước cả hai có thể cùng thấy. Hình ảnh là minh họa nghệ thuật; hành trình ngoài đời là của Bo.</p><p>Màu sắc, thời tiết và điều kiện tiếp cận ngoài đời có thể thay đổi. Hành trình chưa có ngày khởi hành hay đặt chỗ xác nhận.</p><h3>Khám phá các địa điểm thật</h3><ul class="source-list"><li><a href="https://www.australiascoralcoast.com/see-do/national-parks/the-pinnacles" target="_blank" rel="noopener noreferrer">Pinnacles · Australia's Coral Coast ↗</a></li><li><a href="https://www.australiascoralcoast.com/destinations/kalbarri-surrounds/pink-lake" target="_blank" rel="noopener noreferrer">Hutt Lagoon · Australia's Coral Coast ↗</a></li><li><a href="https://www.australiascoralcoast.com/see-do/national-parks/kalbarri-national-park" target="_blank" rel="noopener noreferrer">Kalbarri · Australia's Coral Coast ↗</a></li><li><a href="https://exploreparks.dbca.wa.gov.au/site/shell-beach" target="_blank" rel="noopener noreferrer">Shell Beach · Explore Parks WA ↗</a></li></ul><p class="map-footnote">Đường bờ biển: Natural Earth, public domain. Tiến độ trên trang là phần hành trình bạn đang xem.</p></div></dialog>
-  <div class="sr-only" aria-live="polite" id="journey-announcement"></div>
-  <noscript><div class="noscript-message"><h2>15 ngày của Bo, mang theo ký ức về Bon</h2><p>Sydney → Perth → Pinnacles → Geraldton → Hutt Lagoon → Kalbarri → Shark Bay / Shell Beach → Perth → Sydney.</p><p>Bật JavaScript để đi qua các cảnh pixel và mở lịch trình từng ngày. Hành trình hiện là bản dự kiến.</p></div></noscript>
+      <div class="plan-summary">
+        <span>15 ngày</span>
+        <span>Sydney → Tây Úc</span>
+        <span>Kế hoạch dự kiến</span>
+      </div>
+
+      <ol class="plan-list" id="plan-list"></ol>
+
+      <p class="planning-note">
+        Tuyến nháp giả định bay Sydney–Perth và thuê xe ở Tây Úc.
+        Ngày đi, chuyến bay, nơi nghỉ và chi phí sẽ được chốt sau.
+        Bon xuất hiện trong hình minh họa, không đi cùng Bo ngoài đời.
+      </p>
+    </div>
+  </dialog>
+
+  <dialog
+    class="map-dialog"
+    id="map-dialog"
+    aria-labelledby="map-title"
+  >
+    <div class="dialog-shell map-shell">
+      <header class="dialog-header">
+        <div>
+          <p class="eyebrow">TỪ SYDNEY SANG TÂY ÚC</p>
+          <h2 id="map-title">Bo sẽ đi đâu?</h2>
+        </div>
+
+        <button
+          type="button"
+          class="close-button"
+          data-close
+          aria-label="Đóng bản đồ"
+        >
+          ×
+        </button>
+      </header>
+
+      <div class="map-toolbar">
+        <div
+          class="map-tabs"
+          role="group"
+          aria-label="Phạm vi bản đồ"
+        >
+          <button
+            type="button"
+            class="is-active"
+            data-map-view="australia"
+            aria-pressed="true"
+          >
+            Toàn nước Úc
+          </button>
+
+          <button
+            type="button"
+            data-map-view="west"
+            aria-pressed="false"
+          >
+            Tây Úc
+          </button>
+        </div>
+
+        <span class="map-key">
+          <i></i>
+          Tuyến dự kiến
+        </span>
+      </div>
+
+      <div class="map-canvas" id="map-canvas"></div>
+
+      <div class="map-place" id="map-place">
+        <div>
+          <p class="eyebrow" id="map-place-day">
+            ĐIỂM KHỞI HÀNH
+          </p>
+
+          <h3 id="map-place-title">Sydney</h3>
+
+          <p id="map-place-description">
+            Bo bắt đầu từ Sydney và sẽ trở lại đây sau mười lăm ngày.
+            Đây vẫn là một chuyến đi đang được lên kế hoạch.
+          </p>
+        </div>
+
+        <button
+          type="button"
+          class="pixel-button primary"
+          id="map-go"
+          data-goto="1"
+        >
+          Đến đây
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
+
+      <p class="map-footnote">
+        Bản đồ minh họa tuyến đi, không dùng để dẫn đường.
+        Chặng bay được thể hiện bằng đường nét đứt.
+      </p>
+    </div>
+  </dialog>
+
+  <dialog
+    class="detail-dialog"
+    id="detail-dialog"
+    aria-labelledby="detail-title"
+  >
+    <div class="dialog-shell">
+      <header class="dialog-header">
+        <div>
+          <p class="eyebrow" id="detail-day">NGÀY 01</p>
+          <h2 id="detail-title">Sydney → Perth</h2>
+        </div>
+
+        <button
+          type="button"
+          class="close-button"
+          data-close
+          aria-label="Đóng thông tin ngày"
+        >
+          ×
+        </button>
+      </header>
+
+      <p class="detail-lead" id="detail-lead"></p>
+
+      <dl class="detail-facts" id="detail-facts"></dl>
+
+      <div class="detail-highlight">
+        <span class="eyebrow">ĐIỀU BO MUỐN LÀM</span>
+        <p id="detail-highlight"></p>
+      </div>
+
+      <p class="detail-note" id="detail-note"></p>
+
+      <div class="detail-actions">
+        <button
+          type="button"
+          class="pixel-button primary"
+          id="detail-next"
+        >
+          Sang ngày tiếp
+          <span aria-hidden="true">→</span>
+        </button>
+
+        <button
+          type="button"
+          class="text-link"
+          id="detail-show-plan"
+        >
+          Xem cả hành trình
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog
+    class="about-dialog"
+    id="about-dialog"
+    aria-labelledby="about-title"
+  >
+    <div class="dialog-shell">
+      <header class="dialog-header">
+        <div>
+          <p class="eyebrow">BO &amp; BON</p>
+          <h2 id="about-title">Con chó nhỏ bên cạnh Bo.</h2>
+        </div>
+
+        <button
+          type="button"
+          class="close-button"
+          data-close
+          aria-label="Đóng giới thiệu"
+        >
+          ×
+        </button>
+      </header>
+
+      <p>
+        Đó là Bon, chú bull Pháp trắng với vài đốm đen của Bo.
+        Bon đã mất từ lâu.
+      </p>
+
+      <p>
+        Ngoài đời, Bo sẽ thực hiện chuyến đi này một mình.
+        Khi làm trang web, Bo vẫn muốn có Bon bên cạnh.
+        Nên ở đây có hai nhân vật.
+      </p>
+
+      <p>
+        Những dòng “Gửi Bon” là lời Bo muốn nói với cậu.
+        Không phải lời Bon đáp lại.
+      </p>
+
+      <p>
+        Đây là kế hoạch khám phá Tây Úc trong 15 ngày,
+        xuất phát từ Sydney. Chưa có ngày khởi hành hay đặt chỗ xác nhận.
+        Cảnh pixel là minh họa; màu sắc, thời tiết và điều kiện
+        tiếp cận ngoài đời có thể khác.
+      </p>
+
+      <h3>Khám phá các địa điểm thật</h3>
+
+      <ul class="source-list">
+        <li>
+          <a
+            href="https://www.australiascoralcoast.com/see-do/national-parks/the-pinnacles"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pinnacles · Australia's Coral Coast ↗
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.australiascoralcoast.com/destinations/kalbarri-surrounds/pink-lake"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Hutt Lagoon · Australia's Coral Coast ↗
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.australiascoralcoast.com/see-do/national-parks/kalbarri-national-park"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Kalbarri · Australia's Coral Coast ↗
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://exploreparks.dbca.wa.gov.au/site/shell-beach"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Shell Beach · Explore Parks WA ↗
+          </a>
+        </li>
+      </ul>
+
+      <p class="map-footnote">
+        Đường bờ biển: Natural Earth, public domain.
+        Tiến độ trên trang là phần hành trình bạn đang xem.
+      </p>
+    </div>
+  </dialog>
+
+  <div
+    class="sr-only"
+    aria-live="polite"
+    id="journey-announcement"
+  ></div>
+
+  <noscript>
+    <div class="noscript-message">
+      <h2>Pocket Australia — Bo &amp; Bon</h2>
+
+      <p>
+        Bon mất lâu rồi. Lúc làm trang này,
+        Bo vẫn vẽ cậu bên cạnh.
+      </p>
+
+      <p>
+        Hành trình dự kiến 15 ngày:
+        Sydney → Perth → Pinnacles → Geraldton →
+        Hutt Lagoon → Kalbarri → Shark Bay / Shell Beach →
+        Perth → Sydney.
+      </p>
+
+      <p>
+        Bật JavaScript để đi qua các cảnh pixel
+        và mở lịch trình từng ngày.
+      </p>
+    </div>
+  </noscript>
 </body>
 </html>
