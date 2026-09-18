@@ -35,7 +35,7 @@ const BON_CHAPTERS = [
     description:
       'Chuyến đi còn chưa bắt đầu. Bo đã biết mình muốn có ai đi cùng.',
     bon:
-      'Mình chọn được nơi muốn đi rồi. Chỉ thiếu cậu.'
+      'Mình chọn được nơi muốn đi rồi. Chỉ thiếu cậu thôi...'
   },
   {
     kicker: 'MỘT NGÀY Ở PERTH',
@@ -49,21 +49,21 @@ const BON_CHAPTERS = [
     description:
       'Những cột đá vôi đứng giữa cát vàng. Bo muốn đến lúc nắng xuống thấp, khi nhìn về phía nào cũng thấy một cảnh chưa từng gặp.',
     bon:
-      'Không biết cậu sẽ thích chỗ này không. Mình muốn được biết.'
+      'Không biết cậu sẽ thích chỗ này không? Nói cho mình biết nhé..'
   },
   {
     kicker: 'MEN THEO BỜ BIỂN',
     description:
       'Từ Cervantes đến Geraldton. Bo chừa thời gian để dừng bên biển, ăn một bữa và không phải nhìn đồng hồ suốt chặng đường.',
     bon:
-      'Chặng này dài. Mình cứ thong thả thôi.'
+      'Chặng này dài. Ước gì cậu đi cùng mình nhỉ?'
   },
   {
     kicker: 'HỒ NƯỚC MÀU HỒNG',
     description:
       'Hutt Lagoon là một trong những nơi khiến Bo muốn thực hiện chuyến đi này. Có những cảnh mới nhìn qua ảnh đã muốn gọi ai đó lại xem.',
     bon:
-      'Chắc đến đó mình vẫn muốn gọi: Bon, nhìn này.'
+      'Chắc đến đó mình sẽ gọi: Bon ơi, nhìn này.'
   },
   {
     kicker: 'NHÌN QUA KHUNG ĐÁ',
